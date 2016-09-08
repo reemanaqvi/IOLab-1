@@ -1,1 +1,17 @@
 /*Your mobile targeted css should go here*/
+
+.project-title {
+	font-size: 140%;
+	padding: 3%;
+}
+
+ img {
+	width: 90%;
+	padding: 5%;
+}
+
+.project-detail{
+	width: 80%;
+	text-align: justify;
+	margin-left: 10%;
+}
