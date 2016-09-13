@@ -1,0 +1,13 @@
+body {
+	border: 2px solid black; 
+}
+
+header {
+	background-color: #bd5858;
+}
+
+#main.input {
+	padding: 10px 10px 10px 10px; 
+	border:1px solid black; 
+	margin:10px;
+}

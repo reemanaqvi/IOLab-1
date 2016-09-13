@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pokedex</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">		
+<!-- Load stylesheets based on viewport  -->
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" media="(max-width: 414px)" href="small.css"> 
+<link rel="stylesheet" type="text/css" media="(min-width: 414px) and (max-width: 1024px)" href="medium.css">
+
+</head>
+
+<body background="assets/backgrounds/background_home.png">
+
+<!-- Maroon Header -->
+<div>
+	<header>
+		<button type="button" onclick="alert('Tadaaa!')">Dropdown</button>
+		<img id="menu" src="assets/icons/menu.png" style="height:20px">
+		<p>Pokedex</p>
+		<img id="pokeball-icon" src="assets/icons/pokeball_icon.png">
+	</header>
+</div>
+
+
+<!-- Main Section -->
+<div id="main">
+	<input type="text" name="search-pokemon" value="Search Pokemon">
+
+	<!-- Pikachu title only for mobile -->
+	<p id="pikachu-number">No. 001 Pikachu</p>
+	
+	<!-- Pikachu Image -->
+	<img id="pikachu-img" src="assets/images/pickahu.png">
+
+	<!-- Pikachu bullets-->
+	<div id="bullets">
+		- Electric type <br>
+		- Gentle temperament<br>
+		- Grasslands
+	</div>
+
+	<!-- Pikachu details (not in mobile -->
+	<p id="details">
+		Pickahu can be seen napping in a bright sunlight. It has two red dots on its cheeks. By practicing html and css Pikachu can learn confusion. Pikachu likes to steal computer chargers from sleeping college students.
+	</p>
+	
+</div>
+
+<!-- Blue Navigation Footer for mobile-->
+<div id="navigation1">
+	
+	<button type="button"> BACK </button>
+	<button type="button">
+		<a href="map.html" style="text-decoration:none"> MAP </a></button><br>
+</div>
+<div id="navigation2">
+	<button type="button">
+		<a href="area.html" style="text-decoration:none"> AREA </a></button>
+	<button type="button">NEXT</button>
+</div>
+
+<!-- Images Grid -->
+<section id="grid">	
+	<img src="assets/images/whatisthat.png"></td>
+	<img src="assets/images/abra.png"></td>
+	<img src="assets/images/vulpix.png"></td>
+	<img src="assets/images/nidorino.png"></td>
+	<img src="assets/images/clafary.png"></td>
+	<img src="assets/images/charmeleon.png"></td>
+	<img src="assets/images/charmander.png"></td>
+	<img src="assets/images/firething.png"></td>
+	<img src="assets/images/jigglyppuff.png"></td>
+	<img src="assets/images/horsea.png"></td>
+	<img src="assets/images/pidgey.png"></td>
+	<img src="assets/images/wartortle.png"></td>
+</section>
+
+<!-- Blue Navigation Footer -->
+<footer style="background-color: #5d90cb;">
+	
+		<button type="button"> BACK </button>
+		<button type="button">
+			<a href="map.html" style="text-decoration:none"> MAP </a></button>
+
+		<button type="button">
+			<a href="area.html" style="text-decoration:none"> AREA </a></button>
+		<button type="button">NEXT</button>
+</footer>
+
+
+</body>
+
+</html>
