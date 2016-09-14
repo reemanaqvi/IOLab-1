@@ -1,6 +1,8 @@
 body {
 	font-family: "Gill Sans";
 	font-size: 2.5em;
+	margin-right: 0;
+	margin-left: 0;
 }
 
 div header {
@@ -34,6 +36,10 @@ div header button {
 	font-size: 0.3em;
 }
 
+table {
+	display: none;
+}
+
 div input {
 	padding: 3%;
 	margin: 3%;
@@ -41,6 +47,10 @@ div input {
 	width: 88%;
 	border: 1px solid black;
 	font-size: .5em;
+}
+
+#pikachu-img-2 {
+	display: none;
 }
 
 #pikachu-number {

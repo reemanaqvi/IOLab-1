@@ -4,7 +4,7 @@
 <title>Pokedex</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">		
 <!-- Load stylesheets based on viewport  -->
-<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" media="(min-width: 1024px)" href="main.css">  <!-- set min-width so main doesn't affect other css files -->
 <link rel="stylesheet" type="text/css" media="(max-width: 414px)" href="small.css"> 
 <link rel="stylesheet" type="text/css" media="(min-width: 414px) and (max-width: 1024px)" href="medium.css">
 
@@ -26,12 +26,29 @@
 <!-- Main Section -->
 <div id="main">
 	<input type="text" name="search-pokemon" value="Search Pokemon">
+	
+	<!-- Pikachu Image -->
+	<img id="pikachu-img-2" src="assets/images/pickahu.png">	<!-- Pikachu img for desktop -->
 
-	<!-- Pikachu title only for mobile -->
 	<p id="pikachu-number">No. 001 Pikachu</p>
 	
 	<!-- Pikachu Image -->
 	<img id="pikachu-img" src="assets/images/pickahu.png">
+
+	<!-- pikachu table : only for desktop-->
+	<table>
+		<tr style="background-color:#5d90cb">
+			<th><h5>No. 001 Pikachu</h5></th>
+		</tr>
+
+		<tr>
+			<td><h5>
+				<ul>- Electric type</ul>
+				<ul>- Gentle temperament</ul>
+				<ul>- Grasslands</ul>
+			</h5>
+		</tr>
+	</table>
 
 	<!-- Pikachu bullets-->
 	<div id="bullets">
