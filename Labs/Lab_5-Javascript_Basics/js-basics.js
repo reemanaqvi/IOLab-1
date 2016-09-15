@@ -18,6 +18,7 @@ var cat2 = {
 	alt: "meow2"
 }
 
+
 cat_array = [cat1, cat2]
 
 
