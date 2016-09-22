@@ -1,13 +1,22 @@
+// Add to to do list
 $(document).ready(
     $("#new-item").on('click', function() {
-        // once the document loads, create new item with this function
+        var toAdd = $('input').val();    // whatever user types in input is stored in the variable
+        $('#p-to_do').prepend('<li>' + toAdd + "  " + "<button> Done!</button>" + '</li>');    //prepend puts it on top of the list
+        $('input').val('');   //clears input field after it goes to 'to do' list
     })
 );
 
-$("#list_todo").on('click', "button", function() {
-        // move from list_todo container to list_completed container
+// Move to completed list
+$("#list_todo").on('click', 'button', function(){
+  $(this).html("Still Incomplete!");      // this is what is being clicked i.e. <button>
+  var completedItem = $(this).parent();   // parent refers to one level above this(<button>) which is <li>
+  $("#p-done").prepend(completedItem);
 });
 
-$("#list_completed").on('click', "button", function() {
-        // move back from list_completed container to list_todo container
+//Move it back to first list
+$("#list_completed").on('click','button', function(){
+  $(this).html("Done!");
+  var incompleteItem = $(this).parent();
+  $("#p-to_do").prepend(incompleteItem);
 });
