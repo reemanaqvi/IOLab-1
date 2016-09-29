@@ -1,7 +1,6 @@
 HW 5 – JavaScript & jQuery Wrap-Up (30 total points)
-The goal of this assignment is to continue to build your JavaScript & jQuery skills. For this assignment we are going to recreate some of the functionality of music streaming site SoundCloud. Your task is to build a web page that supports the following interactions. Be sure to read through all of the required interactions before beginning. Use the hw5-skeleton.js file for the two functions listed in the instructions. This file can be found in the ‘javascript’ folder of the GitHub repo.
-Styling is not the primary focus for this assignment, so don’t worry about making your page beautiful (of course, you can if you want). You’re more than welcome to use any CSS framework.
-Requirements (the things for which you’ll be graded)
+Use the hw5-skeleton.js file for the two functions listed in the instructions. This file can be found in the ‘javascript’ folder of the GitHub repo.
+
 
 1.	QUERYING SOUNDCLOUD’S API (9 total points)
     a.	(2 point) User can input text to search SoundCloud’s API
@@ -28,17 +27,14 @@ Requirements (the things for which you’ll be graded)
     f.	(2 points) User can move songs up or down in the playlist one spot at a time. Hint: use the jQuery .prev(), .next(), .insertBefore(), and .insertAfter() methods.
     g.	(2 point) User can play songs that are in the playlist. This play functionality is the same as the play functionality in the search results.
 
+
+
+
+
+
 4.	CODING STYLE (4 total points)
     a.	(1 point) Your site has a title and intuitive labeling or instructions on how to use it.
     b.	(1 point) Your JS and CSS code is separate from your HTML (i.e., there should be no inline CSS styling or JavaScript within your HTML file).
     c.	(1 point) All of your JavaScript is commented appropriately.
     d.	(1 point) Your code is clean and concise (minimal repetition and unused code).
 
-Bonus (You can get up to 4 extra points for doing both of these)
-    1.	 (2 points) ‘RELATED’ SONGS
-        a.	When a user plays a song, a set of ‘related’ songs are loaded into a new section of the page.
-        b.	These ‘related’ songs are found via taking the first ‘tag’ from the tag_list field found in each song in the SoundCloud API response object and then querying the SoundCloud API using this ‘tag’ as the ‘q’ attribute of the data object of the $.get() method.
-        c.	These ‘related’ songs can be played or added to the playlist just like how the regular search results.
-        d.	The ‘related’ songs section is loaded independently from the main search results.
-    2.	(2 points) ‘INFINITE’ SCROLL
-        a.	Use a jQuery library of your choosing to load the next 20 results from the SoundCloud API response object each time the user scrolls to the bottom of the main results. There will only be 200 total results, so don’t be alarmed if the ‘infinite’ scroll stops after 10 additional result loads.
