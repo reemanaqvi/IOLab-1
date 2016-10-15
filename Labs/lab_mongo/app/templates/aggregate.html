@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}
+	Aggregate
+{% endblock %}
+
+{% block header %}
+	{{ super() }}
+	<form action="logout" id="logout">
+		<span id="username">Logged in as {{ name }}</span>
+		<input class="action-button" id="logout-button" type="submit" value="Logout">
+	</form>
+{% endblock %}
+
+{% block content %}
+	<h1>Here is how your data looks like...</h1>
+	<div class="main-container">
+		<h3>We have some cool stats for you</h3>
+		<span class="result-item">The average score before io lab was {{score_before}}</span>
+		<span class="result-item">The average score after io lab is {{score_after}}</span>
+		<span class="result-item">This based on {{count}} total responses</span>
+
+	</div>
+{% endblock %}

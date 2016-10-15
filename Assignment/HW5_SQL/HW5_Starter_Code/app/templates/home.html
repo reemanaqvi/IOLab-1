@@ -8,29 +8,54 @@
       </div>
       <div class="divider"></div>
       <div class="section">
-        <h3>These are all of our awesome customers:</h3>
+        <h3>Customer Directory</h3>
         <table class="striped">
           <thead>
             <tr>
+              <th data-field="customer_id">Customer ID </th>
+              <th data-field="first_name">First Name</th>
+              <th data-field="last_name">Last Name</th>
               <th data-field="company">Company</th>
               <th data-field="email">Email</th>
+              <th data-field="phone">Phone</th>
             </tr>
           </thead>
-          {% for customer in customers %}
+
+<!-- code to display all user -->
+            {% for customer in customers %}
+              <tr>
+                <td> {{customer['customer_id']}} </td>
+                <td> {{customer['first_name']}} </td>
+                <td> {{customer['last_name']}} </td>
+                <td> {{customer['company']}} </td>
+                <td> {{customer['email']}} </td>
+                <td> {{customer['phone']}} </td>
+                <td><a href="{{ url_for('create_order', value=customer['customer_id']) }}">Add an Order</a></td>
+              </tr>
+            {% endfor %}
+          </table>
+      </div>
+
+      <div class="section">
+        <h3>Customer Orders</h3>
+        <table class="striped">
+          <thead>
             <tr>
-              <td>{{ customer['company'] }}</td>
-              <td>{{ customer['email'] }}</td>
-              <!-- Add more fields to showcase on this page
-              Below is a method of adding the 'add an order' button which will route you to create_order in views.py
-              <td><a href="{{ url_for('create_order', value=customer['customer_id']) }}">Add an Order</a></td> -->
+              <th data-field="customer_id">Customer ID</th>
+              <th data-field="name_of_part">Part name</th>
+              <th data-field="manufacturer_of_part">Part manufacturer</th>
+            </tr>
+          </thead>
+          {% for order in orders %}
+            <tr>
+              <td> {{ order['customer_id']}} </td>
+              <td> {{ order['name_of_part']}} </td>
+              <td> {{ order['manufacturer_of_part']}} </td>
             </tr>
           {% endfor %}
         </table>
       </div>
-      <div class="section">
-        <h3>Orders from Customers:</h3>
-        <!-- Display all the current existing order information here -->
-      </div>
-    </div>
+   </div>
   </div>
 {% endblock %}
+
